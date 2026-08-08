@@ -61,12 +61,3 @@ ul {
   clip-path: inset(100%);
   margin: -1px;
 }
-
-/* Container */
-
-.container {
-  width: 100%;
-  max-width: 1440px;
-  padding: 0 16px;
-  margin: 0 auto;
-}
