@@ -1,0 +1,121 @@
+.benefits {
+    padding: 48px 0;
+    background: #ffffff;
+}
+
+.benefits-title {
+    margin: 0 auto 20px;
+    max-width: 335px;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    color: #121212;
+}
+
+.benefits-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.benefits-item {
+    width: 100%;
+    max-width: 335px;
+    margin: 0 auto;
+    padding: 20px 16px;
+    border: 1px solid #d9d9d9;
+    background: #f6f6f6;
+    text-align: center;
+}
+
+.benefits-item-title {
+    margin: 0 0 8px;
+    font-family: 'Sora', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    color: #121212;
+}
+
+.benefits-item-text {
+    margin: 0;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.45;
+    color: #2f2f2f;
+}
+
+@media only screen and (min-width: 768px) {
+    .benefits {
+        padding: 72px 0;
+    }
+
+    .benefits-title {
+        margin-bottom: 28px;
+        max-width: 680px;
+        font-size: 56px;
+        line-height: 1.08;
+    }
+
+    .benefits-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 16px;
+        align-items: stretch;
+    }
+
+    .benefits-item {
+        max-width: none;
+        margin: 0;
+        min-height: 232px;
+        padding: 24px 20px;
+    }
+
+    .benefits-item:last-child {
+        grid-column: 1 / -1;
+        max-width: 360px;
+        justify-self: center;
+    }
+}
+
+@media only screen and (min-width: 1312px) {
+    .benefits {
+        padding: 112px 0;
+    }
+
+    .benefits-title {
+        margin-bottom: 36px;
+        max-width: 880px;
+        font-size: 64px;
+    }
+
+    .benefits-list {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .benefits-item {
+        min-height: 252px;
+        padding: 28px 22px;
+    }
+
+    .benefits-item:last-child {
+        grid-column: auto;
+        max-width: none;
+    }
+
+    .benefits-item-title {
+        font-size: 34px;
+    }
+
+    .benefits-item-text {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+}
