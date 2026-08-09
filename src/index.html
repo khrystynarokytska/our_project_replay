@@ -35,5 +35,50 @@
 
     <load src="./partials/footer.html" />
     <load src="./partials/mobile-menu.html" />
+    <load src="./partials/modal.html" />
+
+  </head>
+  <body>
+    <script type="module">
+      const mobileMenu = document.getElementById("mobile-menu");
+      const openButton = document.querySelector("[data-menu-open]");
+      const closeButton = document.querySelector("[data-menu-close]");
+      const menuLinks = document.querySelectorAll("[data-menu-link]");
+
+      if (mobileMenu && openButton && closeButton) {
+        const openMenu = () => {
+          mobileMenu.classList.add("is-open");
+          mobileMenu.setAttribute("aria-hidden", "false");
+          openButton.setAttribute("aria-expanded", "true");
+          document.body.classList.add("no-scroll");
+        };
+
+        const closeMenu = () => {
+          mobileMenu.classList.remove("is-open");
+          mobileMenu.setAttribute("aria-hidden", "true");
+          openButton.setAttribute("aria-expanded", "false");
+          document.body.classList.remove("no-scroll");
+        };
+
+        openButton.addEventListener("click", openMenu);
+        closeButton.addEventListener("click", closeMenu);
+
+        menuLinks.forEach((link) => {
+          link.addEventListener("click", closeMenu);
+        });
+
+        mobileMenu.addEventListener("click", (event) => {
+          if (event.target === mobileMenu) {
+            closeMenu();
+          }
+        });
+
+        window.addEventListener("keydown", (event) => {
+          if (event.key === "Escape") {
+            closeMenu();
+          }
+        });
+      }
+    </script>
   </body>
 </html>
