@@ -21,6 +21,20 @@ p {
   margin: 0;
 }
 
+h2 {
+  font-family: 'Sora', sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+}
+
+@media (min-width: 1158px) {
+  h2 {
+      font-size: 48px;
+    }
+}
+
 a {
   color: inherit;
 
@@ -61,3 +75,8 @@ ul {
   clip-path: inset(100%);
   margin: -1px;
 }
+
+blockquote {
+  margin: 0;
+}
+
