@@ -27,7 +27,12 @@ h2 {
   line-height: 1.2;
   letter-spacing: -0.01em;
   text-align: center;
-  color: var(--color-scheme-1-text);
+}
+
+@media (min-width: 1158px) {
+  h2 {
+      font-size: 48px;
+    }
 }
 
 a {
