@@ -7,7 +7,7 @@
 /* Common styles */
 @import url('./common.css');
 @import url('./container.css');
-@import url('./recet.css');
+@import url('./reset.css');
 
 /* Sections style */
 @import url('./header.css');
@@ -15,8 +15,7 @@
 @import url('./about-us.css');
 @import url('./benefits.css');
 @import url('./gallery.css');
-@import url('./testimonial.css');
+@import url('./testimonials.css');
 @import url('./contacts.css');
 @import url('./footer.css');
 @import url('./mobile-menu.css');
-@import url('./modal.css');
