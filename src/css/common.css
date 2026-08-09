@@ -21,6 +21,15 @@ p {
   margin: 0;
 }
 
+h2 {
+  font-family: 'Sora', sans-serif;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--color-scheme-1-text);
+}
+
 a {
   color: inherit;
 
@@ -61,3 +70,8 @@ ul {
   clip-path: inset(100%);
   margin: -1px;
 }
+
+blockquote {
+  margin: 0;
+}
+
