@@ -1,5 +1,4 @@
 .about-us {
-    padding: 48px 0;
     background-color: #fffdf9;
 }
 
@@ -141,7 +140,7 @@
     }
 }
 
-@media only screen and (min-width: 1312px) {
+@media only screen and (min-width: 1440px) {
     .about-us {
         padding: 112px 0;
     }
