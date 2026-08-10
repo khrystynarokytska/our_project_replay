@@ -34,7 +34,7 @@ h3 {
   letter-spacing: -0.01em;
 }
 
-@media (min-width: 1158px) {
+@media (min-width: 1440px) {
   h2 {
       font-size: 48px;
     }
