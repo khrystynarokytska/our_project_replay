@@ -85,3 +85,7 @@ blockquote {
   margin: 0;
 }
 
+section {
+  padding-block: 64px;
+}
+
