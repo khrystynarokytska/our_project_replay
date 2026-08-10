@@ -133,7 +133,7 @@ body.no-scroll {
     }
 }
 
-@media only screen and (min-width: 1312px) {
+@media only screen and (min-width: 1440px) {
     .header-menu-btn {
         display: none;
     }
