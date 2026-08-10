@@ -17,6 +17,7 @@
   font-weight: 600;
   line-height: 24px;
   color: #000000;
+  margin: 0;
 }
 
 .contacts-header-main {
@@ -31,6 +32,8 @@
   font-weight: 400;
   line-height: 43.2px;
   color: #000000;
+  text-align: left;
+  margin: 0;
 }
 
 .contacts-desc {
@@ -39,6 +42,7 @@
   font-weight: 400;
   line-height: 27px;
   color: #000000;
+  margin: 0;
 }
 
 .contacts-wrapper {
@@ -222,6 +226,7 @@
   font-weight: 400;
   line-height: 28px;
   color: #000000;
+  margin: 0;
 }
 
 .contacts-link {
@@ -277,7 +282,7 @@
   }
 }
 
-@media only screen and (min-width: 1312px) {
+@media only screen and (min-width: 1440px) {
   .contacts-header {
     width: 768px;
   }
