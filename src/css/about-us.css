@@ -1,35 +1,29 @@
 .about-us {
-    padding-block: 56px;
-    padding-inline: 20px;
     background-color: #fffdf9;
 }
 
 .about-us-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 80px;
+    gap: 24px;
 }
 
 .about-us-media {
     border-radius: 16px;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 .about-us-image {
+    display: block;
     width: 100%;
-    aspect-ratio: 1 / 1;
-    height: auto;
+    height: 223px;
     object-fit: cover;
 }
 
 .about-us-text-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 32px;
+    display: grid;
+    gap: 20px;
 }
 
 .about-us-headline-wrap {
@@ -42,15 +36,15 @@
     font-family: 'Sora', sans-serif;
     font-weight: 400;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.12;
     letter-spacing: -0.01em;
     color: #121212;
 }
 
 .about-us-description {
     margin: 0;
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.45;
     color: #3b3a38;
 }
 
@@ -63,48 +57,23 @@
 }
 
 .about-us-priority-item {
-    position: relative;
     display: flex;
     align-items: center;
     gap: 8px;
     min-height: 24px;
-    padding-left: 32px;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 1.5;
+    font-family: 'Sora', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
     color: #121212;
 }
 
-.about-us-priority-item::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
+.about-us-priority-icon {
+    flex-shrink: 0;
     width: 24px;
     height: 24px;
-    transform: translateY(-50%);
-    background-color: #121212;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    mask-position: center;
-    -webkit-mask-size: contain;
-    mask-size: contain;
-}
-
-.about-us-priority-item--leaf::before {
-    -webkit-mask-image: url('../img/icons.svg#icon-leaf');
-    mask-image: url('../img/icons.svg#icon-leaf');
-}
-
-.about-us-priority-item--heart::before {
-    -webkit-mask-image: url('../img/icons.svg#icon-donate-heart');
-    mask-image: url('../img/icons.svg#icon-donate-heart');
-}
-
-.about-us-priority-item--book::before {
-    -webkit-mask-image: url('../img/icons.svg#icon-book');
-    mask-image: url('../img/icons.svg#icon-book');
+    fill: #121212;
 }
 
 @media only screen and (min-width: 768px) {
@@ -113,11 +82,20 @@
     }
 
     .about-us-content {
-        display: grid;
-        grid-template-columns: minmax(0, 336px) minmax(0, 332px);
-        align-items: start;
-        gap: 24px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         justify-content: space-between;
+        gap: 24px;
+    }
+
+    .about-us-media {
+        width: 336px;
+    }
+
+    .about-us-image {
+        width: 336px;
+        height: 335px;
     }
 
     .about-us-text-content {
@@ -153,32 +131,52 @@
     }
 
     .about-us-content {
-        grid-template-columns: minmax(0, 596px) minmax(0, 588px);
+        display: flex;
         align-items: center;
-        gap: 56px;
+        justify-content: flex-start;
+        gap: 80px;
+    }
+
+    .about-us-media {
+        width: 335px;
+        height: 335px;
+        border-radius: 20px;
+    }
+
+    .about-us-image {
+        width: 335px;
+        height: 335px;
     }
 
     .about-us-text-content {
+        max-width: 588px;
         gap: 28px;
     }
 
     .about-us-headline-wrap {
-        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
         gap: 24px;
-        align-items: start;
     }
 
     .about-us-title {
-        font-size: 42px;
-        line-height: 1.12;
+        font-size: 64px;
+        line-height: 0.9;
+        letter-spacing: -0.04em;
     }
 
     .about-us-description {
-        max-width: 282px;
+        max-width: 588px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .about-us-priority-list {
+        gap: 18px;
     }
 
     .about-us-priority-item {
         width: auto;
-        font-size: 16px;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1.5;
     }
 }
