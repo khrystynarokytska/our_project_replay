@@ -1,4 +1,5 @@
 .benefits-title {
+font-weight: 400;
 text-align: center;
 margin: 0 auto 32px;
 width: 335px;
@@ -16,14 +17,19 @@ background-color: #f2f2f2;
 border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .benefits-item-title {
+font-weight: 400;
 font-size: 24px;
 line-height: 1.4;
 margin-bottom: 24px;
 text-align: center;
 }.benefits-item-text {
+font-weight: 400;
 text-align: center;
 }
 @media only screen and (min-width: 768px) {
+.benefits-title {
+width: 704px;
+}
 .benefits-item {
 width: 704px;
 }
