@@ -7,6 +7,12 @@ body {
   background: #fff;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 address {
   font-style: normal;
 }
