@@ -3,7 +3,16 @@
     <div class="about-us-content">
       <div class="about-us-media">
         <picture>
-          <source srcset="./img/Placeholder Lightbox.png" type="image/png" />
+          <source
+            media="(max-width: 1140px)"
+            srcset="./img/Placeholder Lightbox@3x.png 3x, ./img/Placeholder Lightbox.png 1x"
+            type="image/png"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="./img/Placeholder Lightbox@2x.png 2x, ./img/Placeholder Lightbox.png 1x"
+            type="image/png"
+          />
           <img
             class="about-us-image"
             src="./img/Placeholder Lightbox.png"
