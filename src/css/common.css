@@ -7,6 +7,10 @@ body {
   background: #fff;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 address {
   font-style: normal;
 }

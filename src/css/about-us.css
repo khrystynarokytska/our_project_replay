@@ -63,6 +63,27 @@
     font-size: 18px;
 }
 
+.about-us-item::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+    background-repeat: no-repeat;
+}
+
+.about-us-item-1::before {
+    background-image: url('../img/about-us/leaf.svg');
+}
+
+.about-us-item-2::before {
+    background-image: url('../img/about-us/donate-heart.svg');
+}
+
+.about-us-item-3::before {
+    background-image: url('../img/about-us/book.svg') ;
+}
+
 .about-us-item:not(:last-child) {
     margin-bottom: 24px;
 }
